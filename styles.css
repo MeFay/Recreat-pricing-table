@@ -7,8 +7,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 .container {
   width: 100%;
   height: 100%;
@@ -47,11 +45,6 @@ body {
   font-size: 34px;
   margin: 20px 0 40px;
   font-weight: 500;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 .price-col h3 span {
@@ -59,31 +52,39 @@ body {
 }
 
 .price-col ul {
-    text-align: left;
-    margin: 20px 0;
+  text-align: left;
+  /* margin: 20px 0; */
+  
+  padding: 0;
+  list-style: none;
 }
 
 .price-col ul li {
-    height: 18px;
-    margin-bottom: 15px;
+  height: 18px;
+  margin-bottom: 15px;
+  color: #ddd;
 }
-.price-col ul li::marker {
-    color: #b25169;
+
+.price-col ul li::before {
+  content: "\2022";
+  color: #e33058;
+  font-weight: bold;
+  margin-right: 8px;
 }
 
 .price-col button {
-    width: 100%;
-    padding: 14px 0;
-    background: transparent;
-    color: #fff;
-    font-size: 15px;
-    border: 1px solid #e33058;
-    border-radius: 8px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background 0.5s;
+  width: 100%;
+  padding: 14px 0;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #e33058;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.5s;
 }
 
-.bold{
-    font-weight: 700;
+.bold {
+  font-weight: 700;
 }
