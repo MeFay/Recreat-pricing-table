@@ -90,6 +90,11 @@ body {
   transition: background 0.5s;
 }
 
+.price-card button:hover {
+  transition: 0.5s;
+  background-color:  #e33058;
+}
+
 .bold {
   font-weight: 700;
 }
